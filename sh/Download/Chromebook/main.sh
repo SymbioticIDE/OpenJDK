@@ -5,7 +5,7 @@ apt=openjdk-17-jdk
 download(){
 	mkdir -p $mirror
 	sudo apt-get install $apt -y
-	mv /var/cache/apt/archives/*.deb $mirror/
+	sudo mv /var/cache/apt/archives/*.deb $mirror/
 }
 
 download
